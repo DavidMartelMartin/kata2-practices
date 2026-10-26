@@ -8,6 +8,7 @@ import java.io.IOException;
 public class Main {
     static void main() throws IOException {
         File file = new File("document.txt");
-        FileInputStream is = new FileInputStream(file);
+        try (FileInputStream is = new FileInputStream(file)) {
+        }
     }
 }
