@@ -4,6 +4,8 @@ public class Main {
     static void main() {
         String text = "¡Viva España!";
 
-        System.out.println(text);
+        byte[] bytes = text.getBytes();
+
+        System.out.println(new String(bytes));
     }
 }
