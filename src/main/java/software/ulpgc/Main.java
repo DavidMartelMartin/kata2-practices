@@ -1,11 +1,9 @@
 package software.ulpgc;
 
+import java.io.File;
+
 public class Main {
     static void main() {
-        String text = "¡Viva España!";
-
-        byte[] bytes = text.getBytes();
-
-        System.out.println(new String(bytes));
+        File file = new File("document.txt");
     }
 }
