@@ -2,7 +2,7 @@ package software.ulpgc;
 
 public class Main {
     static void main() {
-        String text = "¡Viva España!";
-        System.out.println(text);
+        byte[] bytes = "¡Viva España!".getBytes();
+        System.out.println(new String(bytes));
     }
 }
